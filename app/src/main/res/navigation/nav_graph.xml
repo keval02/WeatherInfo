@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeDest">
+
+    <fragment
+        android:id="@+id/homeDest"
+        android:name="com.mobiquity.assesment.ui.home.HomeFragment"
+        android:label="@string/mobiquity"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/actionHomeToSelectCityDest"
+            app:destination="@+id/selectCityDest" />
+
+        <action
+            android:id="@+id/actionHomeToCityDest"
+            app:destination="@+id/cityDest" />
+
+        <action
+            android:id="@+id/actionHomeToHelp"
+            app:destination="@+id/helpDest" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectCityDest"
+        android:name="com.mobiquity.assesment.ui.home.SelectCityFragment"
+        android:label="@string/select_city"
+        tools:layout="@layout/fragment_select_city" />
+
+    <fragment
+        android:id="@+id/helpDest"
+        android:name="com.mobiquity.assesment.ui.home.HelpFragment"
+        android:label="@string/help"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/cityDest"
+        android:name="com.mobiquity.assesment.ui.city.CityFragment"
+        tools:layout="@layout/fragment_city">
+
+        <argument
+            android:name="cityId"
+            app:argType="long" />
+    </fragment>
+</navigation>

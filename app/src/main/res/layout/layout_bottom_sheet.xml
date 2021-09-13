@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomSheet"
+    style="@style/SectionStyle"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/_200sdp"
+    app:cardElevation="@dimen/_7sdp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintBottomSheet"
+        style="@style/SectionStyle">
+
+        <TextView
+            android:id="@+id/tvFiveDaysForecast"
+            style="@style/SectionStyle"
+            android:gravity="center"
+            android:padding="@dimen/_6sdp"
+            android:text="@string/five_days_forecast"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBottomSheet"
+            style="@style/ZeroWidthStyle"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFiveDaysForecast"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_five_days_forecast" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

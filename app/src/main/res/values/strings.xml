@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Mobiquity Weather Info</string>
+    <string name="map_api_key">AIzaSyD8qnoc6xMAZ5DIzwxkY5GOw7hklPcVU-Y</string>
+    <string name="something_went_wrong">"Something wrong. Please try again later."</string>
+    <string name="no_internet_error">"No internet connection. Please connect and try again."</string>
+    <string name= "image_base_url">http://openweathermap.org/img/wn/</string>
+    <string name="mobiquity">Mobiquity Weather Info</string>
+    <string name="add_city">Add City</string>
+    <string name="no_bookmarked_city">You haven\'t added any city yet!</string>
+    <string name="select_city">Select City</string>
+    <string name="help">Help</string>
+    <string name="device_location_enabled_declined">You need to allow access to location in order to see nearest bus stops.</string>
+    <string name="unable_to_change_location_service">Sorry, we are not able to change location setting on your device.</string>
+    <string name="unable_to_fetch_location">Sorry, we are not able to fetch location, please try later.</string>
+    <string name="my_location">My Location</string>
+    <string name="okay">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="temperature_in_centi">%s °C</string>
+    <string name="wind_info">Wind speed: %s</string>
+    <string name="humidity_info">Humidity: %d</string>
+    <string name="sunrise_time">Sunrise: %s</string>
+    <string name="sunset_time">Sunset: %s</string>
+    <string name="five_days_forecast">Five Days Forecast</string>
+</resources>
