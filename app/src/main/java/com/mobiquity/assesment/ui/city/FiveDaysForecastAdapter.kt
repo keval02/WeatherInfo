@@ -6,10 +6,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mobiquity.assesment.R
 import com.mobiquity.assesment.service.model.ForecastResponse
-import com.mobiquity.assesment.utils.setImage
 import com.mobiquity.assesment.utils.setTextOrHide
 import kotlinx.android.synthetic.main.item_five_days_forecast.view.*
-import java.text.SimpleDateFormat
 
 class FiveDaysForecastAdapter :
     RecyclerView.Adapter<FiveDaysForecastAdapter.FiveDaysForecastViewHolder>() {

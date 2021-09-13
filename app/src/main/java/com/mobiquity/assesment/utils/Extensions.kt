@@ -50,11 +50,3 @@ fun Activity.requestLocationPermission() {
 fun Long.getFormattedTime(format: String = "hh:mm aa"): String =
     SimpleDateFormat(format, Locale.getDefault()).format(Date(this))
 
-fun ImageView.setImage(imageUrl: String?) {
-    show()
-    Glide.with(this)
-        .load(imageUrl)
-        .placeholder(R.drawable.ic_weather)
-        .dontAnimate()
-        .into(this)
-}
